@@ -8,6 +8,9 @@ public class Subject {
 		this.subjectName = subjectName;
 		this.subjectScore = subjectScore;
 	}
+	public Subject() {
+		
+	}
 	
 	public String getSubjectName() {
 		return subjectName;

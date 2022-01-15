@@ -11,7 +11,7 @@ public class StudentTest {
 		Student studentKim = new Student(1002, "Kim");
 		
 		studentKim.addSubject("국어",70);
-		studentKim.addSubject("수학",85);
+		studentKim.addSubject("수학",85); 
 		studentKim.addSubject("영어",100);
 		
 		studentLee.showStudentInfo();
