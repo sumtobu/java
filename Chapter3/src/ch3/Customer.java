@@ -1,4 +1,4 @@
-package ch2;
+package ch3;
 
 public class Customer {
 	
@@ -33,11 +33,21 @@ public class Customer {
 	public void setCustomerGrade(String customerGrade) {
 		this.customerGrade = customerGrade;
 	}
-
+	/*
 	public Customer() {
-		
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
+		
+		System.out.println("Customer() call");
+	}
+	*/
+	
+	public Customer(int customerId,String customerName) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
+		System.out.println("Customer() call");
 	}
 	
 	public int calcPrice(int price) {
