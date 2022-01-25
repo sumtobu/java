@@ -1,4 +1,4 @@
-package ch9;
+package ch09;
 
 public class Desktop extends Computer {
 

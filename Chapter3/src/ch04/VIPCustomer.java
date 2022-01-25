@@ -1,4 +1,4 @@
-package ch8;
+package ch04;
 
 public class VIPCustomer extends Customer {
 	
@@ -19,7 +19,7 @@ public class VIPCustomer extends Customer {
 	//오버라이딩 에노테이션
 	@Override
 	public int calcPrice(int price) {
-		bonusPoint += price * bonusRatio;
+		bonusPoint += price * bonusPoint;
 		price  -= (int)(price * salesRatio);
 		return price;
 	}

@@ -1,4 +1,4 @@
-package ch6;
+package ch08;
 
 import java.util.ArrayList;
 
@@ -18,17 +18,14 @@ public class CustomerTest {
 		customerList.add(customerE);
 		customerList.add(customerP);
 		customerList.add(customerK);
-		//
-		for(Customer customer : customerList) {
-			System.out.println(customer.showCustomerInfo());
+		
+		//다운캐스팅 인스턴스의 원래형태가 맞는지 확인하고
+		//instanceof 인스턴스의 형이 맞는지 확인한수 true false 반환
+		if (customerE instanceof GoldCustomer) {
+			GoldCustomer gc = (GoldCustomer)customerE;
+			System.out.println(	gc.showCustomerInfo());
 		}
-		int price = 10000;
-		for(Customer customer : customerList) {
-			int cost;
-			cost = customer.calcPrice(price);
-			System.out.println(customer.getCustomerName() + "님이" + cost +"원 지불 하셧습니다.");
-			System.out.println(customer.showCustomerInfo());
-		}
+		
 	}
 
 }

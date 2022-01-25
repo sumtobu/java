@@ -1,4 +1,4 @@
-package ch6;
+package ch02;
 
 public class Customer {
 	
@@ -34,12 +34,10 @@ public class Customer {
 		this.customerGrade = customerGrade;
 	}
 
-	public Customer(int customerId,String customerName) {
-		this.customerId = customerId;
-		this.customerName = customerName;
+	public Customer() {
+		
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
-	
 	}
 	
 	public int calcPrice(int price) {
